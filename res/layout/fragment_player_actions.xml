@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".PlayerActionsFragment" >
+    <TextView
+        android:id="@+id/interact_title_text"
+        style="@style/InGameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interact_title_text" />
+    <Button
+        android:id="@+id/examine_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:text="@string/examine_button" />
+    <Button
+        android:id="@+id/consume_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:layout_toRightOf="@id/examine_button"
+        android:text="@string/consume_button" />
+    <Button
+        android:id="@+id/talk_to_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:layout_toRightOf="@id/consume_button"
+        android:text="@string/talk_to_button"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/fight_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:layout_toRightOf="@id/talk_to_button"
+        android:text="@string/fight_button"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/take_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:layout_toRightOf="@id/fight_button"
+        android:text="@string/take_button"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/save_button"
+        style="@style/GameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interact_title_text"
+        android:layout_toRightOf="@id/take_button"
+        android:text="@string/save_button" />
+</RelativeLayout>

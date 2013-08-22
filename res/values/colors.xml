@@ -1,0 +1,7 @@
+<resources>
+    <color name="darker_blue">#006090</color>
+    <color name="lighter_blue">#53d5f5</color>
+    <color name="darker_blue_faded">#90006090</color>
+    <color name="lighter_blue_faded">#9053d5f5</color>
+    <color name="transparent">#00000000</color>
+</resources>

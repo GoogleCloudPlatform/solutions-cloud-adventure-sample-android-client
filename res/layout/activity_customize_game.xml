@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CustomizeGameActivity" >
+    <TextView
+        android:id="@+id/choose_invites_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/choose_invites_text" />
+    <Button
+        android:id="@+id/create_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:onClick="createGame"
+        android:text="@string/create_game_button" />
+    <ListView
+        android:id="@+id/friends_list_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_invites_text"
+        android:choiceMode="multipleChoice" />
+    <Spinner
+        android:id="@+id/mazetypes_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_game_button"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/pick_a_maze_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mazetypes_spinner"
+        android:text="@string/pick_a_maze_text" />
+</RelativeLayout>

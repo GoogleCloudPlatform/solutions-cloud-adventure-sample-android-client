@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ProfileActivity" >
+    <TextView
+        android:id="@+id/user_handle_value"
+        style="@style/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/add_friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="sendFriendInvite"
+        android:text="@string/add_friend_button" />
+    <EditText
+        android:id="@+id/add_friend_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/add_friend_button"
+        android:hint="@string/add_friend_text" />
+    <TextView
+        android:id="@+id/total_games_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/user_handle_value"
+        android:gravity="center"
+        android:text="@string/total_games_label" />
+    <TextView
+        android:id="@+id/total_games_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/user_handle_value"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/total_gems_found_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/total_games_label"
+        android:gravity="center"
+        android:text="@string/total_gems_found_label" />
+    <TextView
+        android:id="@+id/total_gems_found_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/total_games_value"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/total_mobs_killed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/total_gems_found_label"
+        android:gravity="center"
+        android:text="@string/total_mobs_killed_label" />
+    <TextView
+        android:id="@+id/total_mobs_killed_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/total_gems_found_value"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/friends_list_title"
+        style="@style/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_mobs_killed_label"
+        android:gravity="center_horizontal"
+        android:text="@string/friends_list_title" />
+        <ListView
+            android:id="@+id/friends_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/add_friend_button"
+            android:layout_below="@id/friends_list_title"
+            android:listSelector="@color/transparent" />
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textViewStyle">@style/BaseTextView</item>
+        <item name="android:absListViewStyle">@style/BaseListView</item>
+        <item name="android:listViewStyle">@style/BaseListView</item>
+        <item name="android:spinnerItemStyle">@style/BaseSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/BaseSpinnerDropdown</item>
+        <item name="android:dialogTheme">@style/BaseDialog</item>
+        <item name="android:alertDialogTheme">@style/BaseDialog</item>
+        <item name="android:buttonStyle">@style/BaseButton</item>
+        <item name="android:dropDownListViewStyle">@style/BaseListViewDropdown</item>
+        <item name="android:dropDownItemStyle">@style/BaseDropdownItem</item>
+        </style>
+
+    <style name="BaseText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/lighter_blue</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="MainScreenText" parent="@style/BaseText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="TitleText" parent="@style/BaseText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="InGameTitleText" parent="@style/BaseText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BaseButtonTextAppearance" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SmallButtonTextAppearance" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BaseTextView" parent="android:Widget.Holo.TextView">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="TitleTextView" parent="@style/BaseTextView">
+        <item name="android:textAppearance">@style/TitleText</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="InGameTitleTextView" parent="@style/BaseTextView">
+        <item name="android:textAppearance">@style/InGameTitleText</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">9dp</item>
+    </style>
+
+    <style name="BaseButton" parent="android:Widget.Holo.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bold_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">@style/BaseButtonTextAppearance</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="GameButton" parent="android:Widget.Holo.Button">
+        <item name="android:height">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/game_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">@style/SmallButtonTextAppearance</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="BaseListView" parent="android:Widget.Holo.ListView">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="BaseListViewDropdown" parent="android:Widget.Holo.ListView.DropDown">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="BaseDropdownItem" parent="android:style/Widget.Holo.DropDownItem">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="BaseSpinnerItem" parent="android:Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="BaseSpinnerDropdown" parent="android:Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textAppearance">@style/BaseText</item>
+    </style>
+
+    <style name="BaseDialog" parent="android:style/Theme.Holo.Dialog">
+        <item name="android:textAppearance">@style/BaseText</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

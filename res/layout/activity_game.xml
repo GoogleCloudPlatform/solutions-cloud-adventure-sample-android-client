@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GameActivity" >
+    <fragment
+        android:id="@+id/navigantions_fragment"
+        android:name="com.google.cloud.solutions.cloudadventure.PlayerNavFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    <fragment
+        android:id="@+id/player_stats_fragment"
+        android:name="com.google.cloud.solutions.cloudadventure.PlayerInventoryFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/navigantions_fragment" />
+    <fragment
+        android:id="@+id/game_controls_fragment"
+        android:name="com.google.cloud.solutions.cloudadventure.PlayerActionsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/player_stats_fragment" />
+    <fragment
+        android:id="@+id/game_map_fragment"
+        android:name="com.google.cloud.solutions.cloudadventure.GameMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/game_controls_fragment"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

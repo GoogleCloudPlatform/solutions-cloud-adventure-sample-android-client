@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerInventoryFragment" >
+    <TextView
+        android:id="@+id/view_stats_text"
+        style="@style/InGameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_title_text" />
+    <Button
+        android:id="@+id/look_button"
+        style="@style/GameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_stats_text"
+        android:text="@string/look_button" />
+    <Button
+        android:id="@+id/view_self_button"
+        style="@style/GameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/look_button"
+        android:text="@string/view_self_button" />
+    <Button
+        android:id="@+id/view_inventory_button"
+        style="@style/GameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_self_button"
+        android:text="@string/view_inventory_button" />
+</RelativeLayout>

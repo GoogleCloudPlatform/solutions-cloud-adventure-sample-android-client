@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    <RelativeLayout
+        android:id="@+id/main_welcome_screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        tools:ignore="UselessParent" >
+        <TextView
+            android:id="@+id/main_welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/welcome_message"
+            android:textAppearance="@style/MainScreenText" />
+        <TextView
+            android:id="@+id/user_handle_welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_welcome_text"
+            android:gravity="center"
+            android:textStyle="italic" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_selections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/how_to_play_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="viewHowTo"
+            android:text="@string/how_to_play_button" />
+        <Button
+            android:id="@+id/customize_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="customizeGame"
+            android:text="@string/customize_game_button" />
+        <Button
+            android:id="@+id/view_stats_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="viewStats"
+            android:text="@string/view_stats_button" />
+        <Button
+            android:id="@+id/switch_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="switchUser"
+            android:text="@string/switch_user_button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application-wide -->
+    <string name="app_name">Cloud Adventure!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="dialog_accept_button">Accept</string>
+    <string name="dialog_decline_button">Decline</string>
+    <string name="hello_prefix">"Hello, "</string>
+    <string name="cannot_haz_dialog">You cannot haz</string>
+
+    <!-- MainActivity.java/activity_main.xml -->
+    <string name="welcome_message">Cloud Adventure!</string>
+    <string name="how_to_play_button">About</string>
+    <string name="customize_game_button">Play!</string>
+    <string name="view_stats_button">View Profile</string>
+    <string name="switch_user_button">Switch User</string>
+    <string name="friend_notification_dialog_title">Friend Request</string>
+    <string name="continue_game_dialog_title">In Game</string>
+    <string name="dialog_rejoin_button">Rejoin</string>
+    <string name="dialog_abandon_button">Abandon</string>
+
+    <!-- HowToPlayActivity.java/activity_how_to_play.xml -->
+    <string name="explanation_welcome">Welcome to Cloud Adventure!</string>
+    <string name="explanation_gcp">Remember those awesome classic adventure games? This simple text-based adventure is an example of an application built purely on the Google Cloud Platform.</string>
+    <string name="explanation_solo_game">Your goal in this game is to collect all the gems on your map. Be careful — there are dangerous creatures lurking about...</string>
+    <string name="explanation_social_game">You may invite friends to your game. You each get your own map, so you can\'t run into each other (yet!), but it\'s a race to collect all your gems first. At that time, the game is over for everyone, and you can compare scores. Who collected the most gems? Who got careless and died seven times?!</string>
+    <string name="explanation_goodluck">Good luck.</string>
+
+    <!-- AccountSelectionActivity.java/activity_account_selection.xml -->
+    <string name="add_account_prompt_text">You do not have any Google accounts on this phone. Please go to Account Settings and add a Google account to use.</string>
+
+    <!-- HandleSelectionActivity.java/activity_handle_selection.xml -->
+    <string name="select_account_text">"Choose an account to use:"</string>
+    <string name="enter_user_handle_text">new case-sensitive handle</string>
+    <string name="select_user_button">Select</string>
+
+    <!-- ProfileActivity.java/activity_profile.xml -->
+    <string name="user_handle_value">User Handle</string>
+    <string name="total_games_label">Total Games Played</string>
+    <string name="total_gems_found_label">Total Gems Found</string>
+    <string name="total_mobs_killed_label">Total Mobs Killed</string>
+    <string name="friends_list_title">friends</string>
+    <string name="add_friend_text">User Handle</string>
+    <string name="add_friend_button">Request Friend</string>
+    <string name="add_friend_dialog_title">Friend Request Sent</string>
+    <string name="add_friend_fail_dialog_title">Friend Request Failed</string>
+
+    <!-- CustomizeGameActivity.java/activity_customize_game.xml -->
+    <string name="choose_invites_text">Choose friends to play with:</string>
+    <string name="pick_a_maze_text">Choose your game map:</string>
+    <string-array name="mazetypes">
+        <item>TEST</item>
+        <item>RANDOM</item>
+        <item>LABYRINTH</item>
+    </string-array>
+    <string name="create_game_button">Create Game</string>
+    <string name="create_game_fail_title">Game could not be created</string>
+
+    <!-- PreGameFragment.java/fragment_pre_game.xml -->
+    <string name="game_players_text">Players currently in the game:</string>
+    <string name="game_waiting_text">Waiting for host to start the game...</string>
+    <string name="start_game_button">Start</string>
+    <string name="cancel_game_button">Cancel</string>
+    <string name="leave_game_button">Leave Game</string>
+    <string name="game_abandoned_dialog_title">Game abandoned</string>
+
+    <!-- GameActivity.java/activity_game.xml -->
+    <string name="player_died_dialog_title">You have died!</string>
+    <string name="game_end_dialog_title">The game has ended</string>
+    <string name="new_tile_text" formatted="false">You are now facing %s and on Tile %s. On this tile: </string>
+    <string name="view_self_text" formatted="false">You have %s/%s health.</string>
+    <string name="command_view_self">self</string>
+    <string name="command_view_inventory">inventory</string>
+    <string name="command_look">look</string>
+    <string name="command_move">"go "</string>
+    <string name="command_examine">"examine "</string>
+    <string name="command_fight" formatted="false">fight %s with %s</string>
+    <string name="command_talk">"talk to "</string>
+    <string name="command_take">"take "</string>
+    <string name="command_consume">"consume "</string>
+    <string name="command_dance">"dance with "</string>
+    <string name="command_save">"save"</string>
+    <string name="toast_saved_game">"Save point successful."</string>
+    <string name="toast_not_saved_game">"Save point failed. Please try saving again."</string>
+
+    <!-- PlayerNavigationFragment.java/fragment_player_navigation.xml -->
+    <string name="move_title_text">move</string>
+    <string name="go_forward_button">F</string>
+    <string name="go_right_button">R</string>
+    <string name="go_back_button">B</string>
+    <string name="go_left_button">L</string>
+
+    <!-- GameControlsFragment.java/fragment_game_controls.xml -->
+    <string name="interact_title_text">interact</string>
+    <string name="examine_button">Examine</string>
+    <string name="consume_button">Eat</string>
+    <string name="talk_to_button">Talk</string>
+    <string name="fight_button">Fight</string>
+    <string name="take_button">Take</string>
+    <string name="dance_button">Dance</string>
+    <string name="save_button">Save</string>
+    <string name="examine_dialog_title">What do you want to examine?</string>
+    <string name="consume_dialog_title">What do you want to consume?</string>
+    <string name="fight_dialog_title">Who do you want to fight?</string>
+    <string name="weapon_dialog_title">What do you want to fight with?</string>
+    <string name="talk_dialog_title">Who do you want to talk to?</string>
+    <string name="take_dialog_title">What do you want to pick up?</string>
+    <string name="dance_dialog_title">Who do you want to dance with?</string>
+
+    <!-- GameMapFragment.java/fragment_game_map.xml -->
+    <string name="start_action">You wake up in a dark, mysterious room. You are disoriented, but you discover that you can still look around and inspect the items you are carrying.</string>
+
+    <!-- PlayerStatsFragment.java/fragment_player_stats.xml -->
+       <string name="view_title_text">view</string>
+       <string name="look_button">Surroundings</string>
+       <string name="view_self_button">Self</string>
+       <string name="view_inventory_button">Inventory</string>
+
+    <!-- GameScoresFragment.java/fragment_game_scores.xml -->
+    <string name="return_home_button">Back To Home</string>
+    <string name="player_handle_label"></string>
+    <string name="player_gems_label">Gems</string>
+    <string name="player_mobs_killed_label">Kills</string>
+    <string name="player_deaths_label">Deaths</string>
+    <string name="scores_retrieval_issue">There was a problem retrieving some players\' scores. :(</string>
+
+</resources>
